@@ -22,7 +22,6 @@ def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
         if q["question"] == question:
             return q["answer"]
 
-
 def chat_bot():
     knowledge_base: dict = load_knowledge_base('knowledge_base.json')
     
