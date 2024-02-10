@@ -24,6 +24,7 @@ def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
             return q["answer"]
 
 
+
 def chat_bot():
     knowledge_base: dict = load_knowledge_base('knowledge_base.json')
     
@@ -46,6 +47,7 @@ def chat_bot():
                 knowledge_base["questions"].append({"question": user_input, "answer": new_answer})
                 save_knowledge_base("knowledge_base.json", knowledge_base)
                 print("Bot: Thank you! I have learnt a new response!")
+
 
 
 if __name__ == "__main__":
